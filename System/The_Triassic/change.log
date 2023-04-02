@@ -1,16 +1,17 @@
 # /System/The_Triassic
 	- Switched to a friendly version name "The Triassic"
+	- Updated sources.list file
 	- Packages TO INSTALL:
-		* kde-connect
+		* kdeconnect, nautilus-kdeconnect
 		* fonts-liberation
 		* google-chrome-stable (deb)
-		* nvidia-driver-520
-		* iwlwifi
+		* nvidia-driver-525 (puede ser fallo)
 		* software-properties-gtk
 		* gnome-disk-utility
 		* ntfs-3g
 		* ubuntu-restricted-extras
 		* libdvd-pkg
+			·dpkg-reconfigure libdvd-pkg
 		* transmission
 		* krita
 		* steam-client (deb)
@@ -20,10 +21,13 @@
 		* Waydroid (deb+sources)
 		* Spotify-Client
 		* Scrcpy + ADB
-		+ WebApps
+		+ WebApps (Webapp Manager - deb)
 			·Geforce Now ·Twitter ·Instagram ·Tiktok ·Youtube-Music ·Youtube ·Office.com ·Google Drive ·Gmail
 			·Google Maps ·Google Find My ·Google Messages ·Google Meet ·Whatsapp Web ·Netflix ·Disney+ ·Hbo MAX
-			·Prime Video 
+			·Prime Video
+	- Packages REMOVED:
+		* plymouth
+			rm -rf /usr/share/plymouth
 	- Added "sources.list":
 		* universe
 			add-apt-repository universe
@@ -34,6 +38,5 @@
 		* Spotify-Client
 			wget -O- https://download.spotify.com/debian/pubkey.gpg | apt-key add -
 			add-apt-repository "deb http://repository.spotify.com stable non-free"
-		* Scrcpy
 	- Remove all original backgrounds, splash screens, wallpapers
 

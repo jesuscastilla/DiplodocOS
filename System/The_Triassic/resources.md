@@ -6,5 +6,5 @@
 	apt install curl ca-certificates -y
 	curl https://repo.waydro.id | bash
 # Spotify-Client
-	wget -O- https://download.spotify.com/debian/pubkey.gpg | apt-key add -
-	add-apt-repository "deb http://repository.spotify.com stable non-free"
+	curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+	echo "deb http://repository.spotify.com stable non-free" | tee /etc/apt/sources.list.d/spotify.list
