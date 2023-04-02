@@ -34,3 +34,4 @@
 			wget -O- https://download.spotify.com/debian/pubkey.gpg | apt-key add -
 			add-apt-repository "deb http://repository.spotify.com stable non-free"
 		* Scrcpy
+	- Remove all original backgrounds, splash screens, wallpapers
