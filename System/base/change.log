@@ -1,3 +1,4 @@
 # /System/base
+	- Generate grub configuration file (remove splash)
 	- DELETED Packages:
 		* ntfsprogs
