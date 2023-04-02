@@ -14,16 +14,38 @@
 			2.- USB stick with MBR - "live" and install
 			3.- USB stick with GPT - "live" and install 
 	- Non published on Github repository
+	- Non MINIMAL version
 	
 	- Packages TO INSTALL:
 		* linux-firmware
-		* intel-microcode, amd-microcode
+		* intel-microcode, amd64-microcode
 		* tlp
 		+ dpkg add architecture i386
 	- DELETED Packages:
 		* snapd (all packages too)
-		* thunderbird
-
+		* thunderbird*
+		* gnome-calculator
+		* gedit
+		* ubuntu-software
+		* libreoffice*
+		* aisleriot
+		* baobab
+		* cheese
+		* deja-dup
+		* duplicity
+		* gnome-calendar
+		* gnome-font-viewer
+		* gnome-mahjongg
+		* gnome-mines
+		* gnome-sudoku
+		* gnome-todo, gnome-todo-common
+		* gnome-user-docs
+		* gnome-video-effects
+		* remmina*
+		* rhythmbox*
+		* totem*
+		* usb-creator-gtk
+		
 
 # /System/base
 	- DELETED Packages:
