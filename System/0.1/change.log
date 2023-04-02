@@ -1,0 +1,36 @@
+# /System/0.1
+	- Packages TO INSTALL:
+		* kde-connect
+		* fonts-liberation
+		* google-chrome-stable (deb)
+		* nvidia-driver-520
+		* iwlwifi
+		* software-properties-gtk
+		* gnome-disk-utility
+		* ntfs-3g
+		* ubuntu-restricted-extras
+		* libdvd-pkg
+		* transmission
+		* krita
+		* steam-client (deb)
+		* playonlinux
+			·python ·imagemagick ·icoutils ·jq
+		* Wine64
+		* Waydroid (deb+sources)
+		* Spotify-Client
+		* Scrcpy + ADB
+		+ WebApps
+			·Geforce Now ·Twitter ·Instagram ·Tiktok ·Youtube-Music ·Youtube ·Office.com ·Google Drive ·Gmail
+			·Google Maps ·Google Find My ·Google Messages ·Google Meet ·Whatsapp Web ·Netflix ·Disney+ ·Hbo MAX
+			·Prime Video 
+	- Added "sources.list":
+		* universe
+			add-apt-repository universe
+		* Google Chrome
+		* DeepinOS
+			add-apt-repository ppa:ubuntudde-dev/stable
+		* Steam-Client
+		* Spotify-Client
+			wget -O- https://download.spotify.com/debian/pubkey.gpg | apt-key add -
+			add-apt-repository "deb http://repository.spotify.com stable non-free"
+		* Scrcpy

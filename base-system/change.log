@@ -1,0 +1,25 @@
+# /base-system/
+	- Based on latest 22.04 release of Ubuntu LTS
+	- Based on latest Ubuntu generic-kernel 
+	- Can boot with UEFI (efi keys) and MBR partition scheme
+	- Use of latest release of Cubic Wizard:
+		· iso = ubuntu jammy
+		· name = base-system
+		· version = alpha
+		· terminal = apt update && apt upgrade // "Packages TO INSTALL" // "DELETED Packages"
+		· compression = xz
+	- (Personal info)
+		· Each version is tested by me at first:
+			1.- Virtual Machine (Vmware Workstation) - "live" and install
+			2.- USB stick with MBR - "live" and install
+			3.- USB stick with GPT - "live" and install 
+	- Non published on Github repository
+	
+	- Packages TO INSTALL:
+		* linux-firmware
+		* intel-microcode, amd-microcode
+		* tlp
+		+ dpkg add architecture i386
+	- DELETED Packages:
+		* snapd (all packages too)
+		* thunderbird

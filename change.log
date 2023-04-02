@@ -1,0 +1,67 @@
+# /base-system/
+	- Based on latest 22.04 release of Ubuntu LTS
+	- Based on latest Ubuntu generic-kernel 
+	- Can boot with UEFI (efi keys) and MBR partition scheme
+	- Use of latest release of Cubic Wizard:
+		· iso = ubuntu jammy
+		· name = base-system
+		· version = alpha
+		· terminal = apt update && apt upgrade // "Packages TO INSTALL" // "DELETED Packages"
+		· compression = xz
+	- (Personal info)
+		· Each version is tested by me at first:
+			1.- Virtual Machine (Vmware Workstation) - "live" and install
+			2.- USB stick with MBR - "live" and install
+			3.- USB stick with GPT - "live" and install 
+	- Non published on Github repository
+	
+	- Packages TO INSTALL:
+		* linux-firmware
+		* intel-microcode, amd-microcode
+		* tlp
+		+ dpkg add architecture i386
+	- DELETED Packages:
+		* snapd (all packages too)
+		* thunderbird
+
+
+# /System/base
+	- DELETED Packages:
+		* ntfsprogs
+
+# /System/0.1
+	- Packages TO INSTALL:
+		* kde-connect
+		* fonts-liberation
+		* google-chrome-stable (deb)
+		* nvidia-driver-520
+		* iwlwifi
+		* software-properties-gtk
+		* gnome-disk-utility
+		* ntfs-3g
+		* ubuntu-restricted-extras
+		* libdvd-pkg
+		* transmission
+		* krita
+		* steam-client (deb)
+		* playonlinux
+			·python ·imagemagick ·icoutils ·jq
+		* Wine64 (deb)
+		* Waydroid (deb+sources)
+		* Spotify-Client
+		* Scrcpy + ADB
+		+ WebApps
+			·Geforce Now ·Twitter ·Instagram ·Tiktok ·Youtube-Music ·Youtube ·Office.com ·Google Drive ·Gmail
+			·Google Maps ·Google Find My ·Google Messages ·Google Meet ·Whatsapp Web ·Netflix ·Disney+ ·Hbo MAX
+			·Prime Video 
+	- Added "sources.list":
+		* universe
+			add-apt-repository universe
+		* Google Chrome
+		* DeepinOS
+			add-apt-repository ppa:ubuntudde-dev/stable
+		* Steam-Client
+		* Spotify-Client
+			wget -O- https://download.spotify.com/debian/pubkey.gpg | apt-key add -
+			add-apt-repository "deb http://repository.spotify.com stable non-free"
+		* Scrcpy
