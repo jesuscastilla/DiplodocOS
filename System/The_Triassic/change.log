@@ -61,3 +61,6 @@
 # /System/The_Triassic v1.3
 	- Added DNIe support and smart card module
 	- Testing new preseed file for installation, may not work at all..
+	
+# /System/The_Triassic v1.4
+	- Testing new desktop environment
