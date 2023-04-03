@@ -111,3 +111,6 @@
 # /System/The_Triassic v1.2
 	- Extracted new sources.list file >> /sources/sources.list
 	
+# /System/The_Triassic v1.3
+	- Added DNIe support and smart card module
+	- Testing new preseed file for installation, may not work at all..
