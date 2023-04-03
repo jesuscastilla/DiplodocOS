@@ -55,3 +55,6 @@
 		* gnome-logs
 		* ubuntu-docs
 
+# /System/The_Triassic v1.2
+	- Extracted new sources.list file >> /sources/sources.list
+	
