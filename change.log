@@ -93,4 +93,17 @@
 			wget -O- https://download.spotify.com/debian/pubkey.gpg | apt-key add -
 			add-apt-repository "deb http://repository.spotify.com stable non-free"
 	- Remove all original backgrounds, splash screens, wallpapers
+	
+# /System/The_Triassic v1.1
+	- Removed sources.list file from repository due to an incoming change
+	- Attempt to remove "Imagemagick" icon from apps launcher
+	- Disabled release-updates and edited more configs
+		· nano /etc/apt/apt.conf.d/
+		· /etc/update-motd.d/
+	- Packages REMOVED:
+		* eog
+		* gcr
+		* gnome-characters
+		* gnome-logs
+		* ubuntu-docs
 
