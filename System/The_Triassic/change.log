@@ -44,6 +44,7 @@
 # /System/The_Triassic v1.1
 	- Removed sources.list file from repository due to an incoming change
 	- Attempt to remove "Imagemagick" icon from apps launcher
+	- Removed Gparted package after installation script
 	- Disabled release-updates and edited more configs
 		· nano /etc/apt/apt.conf.d/
 		· /etc/update-motd.d/
@@ -53,3 +54,4 @@
 		* gnome-characters
 		* gnome-logs
 		* ubuntu-docs
+
