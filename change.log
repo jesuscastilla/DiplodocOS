@@ -1,5 +1,5 @@
 # /base-system/
-	- Based on latest 22.04 release of Ubuntu LTS
+	- Based on latest 22.04 release of Ubuntu LTS // Minimal Verion
 	- Based on latest Ubuntu generic-kernel 
 	- Can boot with UEFI (efi keys) and MBR partition scheme
 	- Use of latest release of Cubic Wizard:
